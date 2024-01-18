@@ -1,7 +1,5 @@
-/*# Tarea clase 8
+// TAREA:
+// A las 2 tareas de la clase 6, ponerles las validaciones que consideren
+// necesarias.
 
-A las 2 tareas de la clase 6, ponerles las validaciones que consideren
-necesarias.
-
-TIP: Las edades no pueden tener decimales.
-*/
+// TIP: Las edades no pueden tener decimales.

@@ -11,6 +11,7 @@ body {
   font-size: 16px;
   line-height: 32px;
 }
+
 a {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
@@ -18,15 +19,19 @@ a {
   white-space: nowrap;
   padding: 10px 15px;
 }
-header, footer {
+
+header,
+footer {
   box-sizing: border-box;
   flex: 0 1 auto;
   background-color: black;
   color: white;
 }
-header{
+
+header {
   width: 100%;
 }
+
 header ul {
   margin: 0;
   padding: 0;
@@ -39,24 +44,28 @@ header ul {
   align-content: center;
   align-items: center;
 }
+
 header h1 {
   color: white;
   font-size: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
 header a {
   color: white;
   border: 2px solid white;
   border-radius: 5em;
   background: black;
 }
+
 header a:hover {
   color: black;
   border: 2px solid #CFBD6F;
   background: #CFBD6F;
   transition: all 0.3s ease-in-out;
 }
+
 section {
   flex: 1 auto;
   width: 100%;
@@ -68,16 +77,18 @@ section {
   justify-content: center;
   background: url('../img/confetis.svg') no-repeat center center;
 }
-.gift_top{
-	z-index: 3;
-	margin-bottom: -50px;
-}
-.gift_bottom{
-	z-index: 1;
-	margin-top: -20px;
+
+.gift_top {
+  z-index: 3;
+  margin-bottom: -50px;
 }
 
-footer{
+.gift_bottom {
+  z-index: 1;
+  margin-top: -20px;
+}
+
+footer {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   font-size: 0.9rem;
@@ -87,22 +98,26 @@ footer{
   justify-content: space-between;
   align-items: flex-start;
 }
-footer > ul {
+
+footer>ul {
   list-style: none;
   -webkit-padding-start: 0;
 }
+
 footer li {
   padding: 5px;
 }
+
 footer a {
   color: #CFBD6F;
 }
+
 footer a:hover {
   color: white;
 }
 
 @media all and (max-width: 640px) {
-    header h1 {
-        display: none;
-    }
+  header h1 {
+    display: none;
+  }
 }
