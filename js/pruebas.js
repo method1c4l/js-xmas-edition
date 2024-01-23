@@ -1,12 +1,17 @@
 function testValidarNombre() {
     console.assert(
-        validarNombre('') === 'Este campo debe tener al menos 1 caracter',
+        validarNombre('') === 'El campo de nombre debe tener al menos 1 caracter',
         'validarNombre no pudo validar que el nombre no sea vacío'
     )
 
     console.assert(
-        validarNombre('11111111111111111111111111111111111111111111111111') === 'Este campo debe tener menos de 50 caracteres',
+        validarNombre('llllllllllllllllllllllllllllllllllllllllllllllllll') === 'El campo de nombre debe tener menos de 50 caracteres',
         'validarNombre no pudo validar que el nombre no supere los 50 caracteres'
+    )
+
+    console.assert(
+        validarNombre('12345') === 'El campo de nombre sólo acepta letras',
+        'validarNombre no pudo validar que el nombre sólo tenga letras'
     )
 
     console.assert(
@@ -20,7 +25,7 @@ testValidarNombre();
 
 function testValidarCiudad() {
     console.assert(
-        validarCiudad('') === 'Este campo es obligatorio',
+        validarCiudad('') === 'El campo de ciudad es obligatorio',
         'validarCiudad no pudo validar que la ciudad no sea vacía'
     )
 
@@ -35,15 +40,20 @@ testValidarCiudad();
 
 function testValidarDescripcionRegalo() {
     console.assert(
-        validarDescripcionRegalo('') === 'Este campo debe tener al menos 1 caracter',
+        validarDescripcionRegalo('') === 'El campo de descripción debe tener al menos 1 caracter',
         'validarDescripcionRegalo no pudo validar que la descripción del regalo no sea vacía'
     )
 
     console.assert(
         validarDescripcionRegalo(
-            '1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111'
-        ) === 'Este campo debe tener menos de 100 caracteres',
+            'llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll'
+        ) === 'El campo de descripción debe tener menos de 100 caracteres',
         'validarDescripcionRegalo no pudo validar que la descripción del regalo no supere los 100 caracteres'
+    )
+
+    console.assert(
+        validarDescripcionRegalo('@&%#$') === 'El campo de descripción sólo acepta letras y números',
+        'validarDescripcionRegalo no pudo validar que la descripción del regalo sólo tenga letras y números'
     )
 
     console.assert(
