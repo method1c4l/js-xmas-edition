@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 5 - Tarea 1</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora de Salario Mensual</h1>
+    </header>
+
+    <main id="main">
+        <form name="formulario">
+            <label for="salario-anual">Ingrese su salario anual:</label>
+            <span>$</span><input id="salario-anual" name="salario-anual" type="number" placeholder="1000000">
+
+            <button type="submit">Calcular</button>
+            <button id="reiniciar" type="reset">Reiniciar</button>
+
+            <div id="error"></div>
+        </form>
+
+        <div id="resultado">
+            <label for="salario-mensual">Su salario mensual es:</label>
+            <span>$</span><input id="salario-mensual" type="text" disabled>
+        </div>
+    </main>
+
+    <footer>
+        <p id="copyright">&copy; 2024 | Pablo David</p>
+    </footer>
+
+    <script src="js/tarea-1.js"></script>
+    <script src="js/tests.js"></script>
+</body>
+
+</html>
