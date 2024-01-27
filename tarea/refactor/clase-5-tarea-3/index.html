@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 5 - Tarea 3</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora de Duración</h1>
+    </header>
+
+    <main id="main">
+        <form name="form-cantidad">
+            <label for="cantidad-videos">Ingrese la cantidad de videos:</label>
+            <input id="cantidad-videos" name="cantidad-videos" type="number" placeholder="10">
+
+            <button type="submit">Aceptar</button>
+            <button id="reiniciar" type="reset">Reiniciar</button>
+
+            <div id="error-cantidad" class="error"></div>
+        </form>
+
+        <form name="form-duracion">
+            <button id="calcular" class="oculto" type="submit">Calcular duración total</button>
+        </form>
+
+        <div id="resultado">
+            <strong id="tiempo-total"></strong>
+        </div>
+    </main>
+
+    <footer>
+        <p id="copyright">&copy; 2024 | Pablo David</p>
+    </footer>
+
+    <script src="js/tarea-3.js"></script>
+    <script src="js/tests.js"></script>
+</body>
+
+</html>
