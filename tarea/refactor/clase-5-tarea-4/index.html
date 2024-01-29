@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 5 - Tarea 4</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Números!</h1>
+    </header>
+
+    <main id="main">
+        <form id="form">
+            <label for="numero">Ingrese un número a la vez:</label>
+            <input id="numero" type="number" placeholder="12">
+
+            <button id="agregar" type="submit">Agregar</button>
+            <button id="remover" type="submit">Remover</button>
+            <button id="reiniciar" type="reset">Reiniciar</button>
+
+            <div id="error-numero" class="error"></div>
+        </form>
+
+        <div>
+            <ol id="lista-numeros">
+                <li class="vacio">-</li>
+                <li class="vacio">-</li>
+                <li class="vacio">-</li>
+                <li class="vacio">-</li>
+                <li class="vacio">-</li>
+                <li class="vacio">-</li>
+                <li class="vacio">-</li>
+                <li class="vacio">-</li>
+                <li class="vacio">-</li>
+            </ol>
+
+            <button id="calcular" class="oculto" type="submit">Calcular</button>
+        </div>
+
+        <div id="resultados" class="oculto">
+            <em id="numero-promedio">El promedio de los números es: <span class="resultado"></span></em>
+            <em id="numero-menor">El número menor es: <span class="resultado"></span></em>
+            <em id="numero-mayor">El número mayor es: <span class="resultado"></span></em>
+            <em id="numero-repetido">El número más repetido es: <span class="resultado"></span></em>
+        </div>
+    </main>
+
+    <footer>
+        <p id="copyright">&copy; 2024 | Pablo David</p>
+    </footer>
+
+    <script src="js/tarea-4.js"></script>
+    <script src="js/tests.js"></script>
+</body>
+
+</html>
