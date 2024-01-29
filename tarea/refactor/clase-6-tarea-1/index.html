@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 6 - Tarea 1</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora de Edad</h1>
+    </header>
+
+    <main id="main">
+        <form name="form-cantidad">
+            <label for="cantidad-integrantes">Ingrese la cantidad de integrantes en su grupo familiar:</label>
+            <input id="cantidad-integrantes" name="cantidad-integrantes" type="number" placeholder="5">
+
+            <button type="submit">Aceptar</button>
+            <button id="reiniciar" type="reset">Reiniciar</button>
+
+            <div id="error-cantidad" class="error"></div>
+        </form>
+
+        <form name="form-edades">
+            <button id="calcular" class="oculto" type="submit">Calcular edades</button>
+        </form>
+
+        <div id="resultados" class="oculto">
+            <em id="edad-mayor">La edad mayor es: <span class="resultado"></span> años.</em>
+            <em id="edad-menor">La edad menor es: <span class="resultado"></span> años.</em>
+            <em id="edad-promedio">La edad promedio es: <span class="resultado"></span> años.</em>
+        </div>
+    </main>
+
+    <footer>
+        <p id="copyright">&copy; 2024 | Pablo David</p>
+    </footer>
+
+    <script src="js/tarea-1.js"></script>
+    <script src="js/tests.js"></script>
+</body>
+
+</html>
