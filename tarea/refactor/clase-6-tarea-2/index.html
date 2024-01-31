@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 6 - Tarea 2</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora de Salario</h1>
+    </header>
+
+    <main id="main">
+        <form>
+            <button id="agregar" type="submit">Agregar Integrante</button>
+            <button id="remover" type="submit">Remover Integrante</button>
+            <button id="reiniciar" type="reset">Reiniciar Todo</button>
+
+            <div id="inputs-salario"></div>
+
+            <button id="calcular" class="oculto" type="submit">Calcular</button>
+        </form>
+
+        <div id="resultados" class="oculto">
+            <em id="salario-anual-mayor">El salario anual mas alto es: <span class="resultado"></span></em>
+            <em id="salario-anual-menor">El salario anual mas bajo es: <span class="resultado"></span></em>
+            <em id="salario-anual-promedio">El salario anual promedio es: <span class="resultado"></span></em>
+            <em id="salario-mensual-promedio">El salario mensual promedio es: <span class="resultado"></span></em>
+        </div>
+    </main>
+
+    <footer>
+        <p id="copyright">&copy; 2024 | Pablo David</p>
+    </footer>
+
+    <script src="js/tarea-2.js"></script>
+    <script src="js/tests.js"></script>
+</body>
+
+</html>
